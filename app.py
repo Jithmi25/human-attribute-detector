@@ -24,8 +24,7 @@ if theme == "Light Mode":
         }
         </style>
     """, unsafe_allow_html=True)
-
-# genai.configure(api_key="AIzaSyC4o0QSjeP-2JH4hMY-9TTlNAYoJgnUK2k")  
+  
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
