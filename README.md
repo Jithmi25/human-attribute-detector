@@ -25,7 +25,7 @@ A web-based application that uses **Google Gemini AI** and **Streamlit** to anal
 
 | Upload Image          | AI Detection              |
 | --------------------- | ------------------------- |
-| ![Image](preview.jpg) | ![Analysis](analysis.jpg) |
+| ![Image](preview.PNG) | ![Analysis](analysis.png) |
 
 ---
 
@@ -34,6 +34,6 @@ A web-based application that uses **Google Gemini AI** and **Streamlit** to anal
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ai-human-attribute-detector.git
+git clone https://github.com/Jithmi25/human-attribute-detector.git
 cd ai-human-attribute-detector
 ```

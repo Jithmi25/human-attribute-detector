@@ -1,6 +1,11 @@
 import streamlit as st
 import google.generativeai as genai
 import PIL.Image
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 st.set_page_config(page_title="AI Human Attribute Detector", layout="wide")
 
@@ -20,7 +25,8 @@ if theme == "Light Mode":
         </style>
     """, unsafe_allow_html=True)
 
-genai.configure(api_key="AIzaSyC4o0QSjeP-2JH4hMY-9TTlNAYoJgnUK2k")  
+# genai.configure(api_key="AIzaSyC4o0QSjeP-2JH4hMY-9TTlNAYoJgnUK2k")  
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 def convert_emotion_to_emoji(text):
